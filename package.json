@@ -29,7 +29,7 @@
   "dependencies": {
     "colour": "0.7.1",
     "graceful-fs": "4.1.4",
-    "loader-utils": "0.2.16"
+    "loader-utils": "1.2.3"
   },
   "devDependencies": {
     "babel-cli": "6.10.1",
@@ -39,12 +39,12 @@
     "babel-polyfill": "~6.13.0",
     "babel-preset-es2015": "6.9.0",
     "babel-preset-stage-0": "6.5.0",
-    "css-loader": "~0.26.1",
+    "css-loader": "1.0.1",
     "eslint": "2.13.1",
     "eslint-plugin-babel": "3.3.0",
     "ts-loader": "~0.8.2",
     "typescript": "~1.8.10",
-    "webpack": "~1.13.2"
+    "webpack": "^4.0.0"
   },
   "peerDependencies": {
     "css-loader": ">=0.23.1"

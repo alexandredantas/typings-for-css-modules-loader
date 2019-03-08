@@ -1,6 +1,9 @@
 import cssLoader from 'css-loader';
 import cssLocalsLoader from 'css-loader/locals';
-import loaderUtils from 'loader-utils';
+import {
+  getOptions,
+  parseQuery
+} from 'loader-utils';
 import 'colour';
 
 import {
@@ -24,7 +27,8 @@ module.exports = function(...input) {
   // mock async step 1 - css loader is async, we need to intercept this so we get async ourselves
   const callback = this.async();
 
-  const query = loaderUtils.parseQuery(this.query);
+  const query = getOptions(this) || {};
+
   const logger = loggerCreator(query.silent);
 
   const moduleMode = query.modules || query.module;
